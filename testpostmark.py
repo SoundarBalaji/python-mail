@@ -1,16 +1,16 @@
 from postmarker.core import PostmarkClient
 
 
-FROM = 'soundar@thinkbridge.in'
+FROM = '----from mail id---'
 
-TO = ['soundar@thinkbridge.in']
+TO = ['--- to mail id---']
 
 SUBJECT = "meeting subject"
 
 TEXT = "this is the message for you"
 
 # send the mail
-s = PostmarkClient(server_token='c5aa6dc8-1eac-42bc-a759-e30315aeae6d')
+s = PostmarkClient(server_token='--- server token---')
 s.emails.send(
   From=FROM,
   To=TO,
