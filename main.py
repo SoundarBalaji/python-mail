@@ -2,9 +2,9 @@ import smtplib
 
 # def send_mail():
 # try:
-FROM = 'soundar.fullstackdeveloper@gmail.com'
+FROM = '---mail id---'
 
-TO = 'soundar@thinkbridge.in'
+TO = '---to mail id----'
 
 SUBJECT = "meeting subject"
 
@@ -25,7 +25,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.ehlo()
 s.starttls()
 
-user = 'soundar.fullstackdeveloper@gmail.com'
+user = '---- from mail id---'
 password = ''
 s.login(user, password)
 s.sendmail(FROM, TO, message)
